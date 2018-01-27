@@ -27,7 +27,11 @@ alias kcc='kubectl config'
 alias kcd='kc describe'
 alias kcdel-all='kc get pod |  cut -d " " -f1 - | xargs -n1 -P 10 kubectl delete pod'
 
-alias fwp='filewatcher $@ "python $@"'
-
 alias ..='cd ..'
 alias ...='cd ../..'
+
+alias 'code'='code-insiders'
+
+function c() {
+	code "${1:-.}"
+}

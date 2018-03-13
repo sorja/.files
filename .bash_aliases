@@ -35,3 +35,5 @@ alias 'code'='code-insiders'
 function c() {
 	code "${1:-.}"
 }
+alias 'cdr'='cd $(git rev-parse --show-toplevel)'
+
